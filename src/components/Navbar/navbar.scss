@@ -1,0 +1,69 @@
+@import "../../styles/variables";
+
+nav.navContainer{
+  display: flex;
+  justify-content: space-between;
+
+  color: $hslWhite;
+
+  font-size: 1.3rem;
+
+  & .hamburgerButton{
+    display: none;
+    font-size: 0;
+    background: unset;
+    border: unset;
+  }
+
+  & ul{
+    display: flex;
+    margin: auto 0;
+    list-style-type: none;
+
+    & li {
+      position: relative;
+      padding: 0 1rem;
+
+      &:hover:after{
+        content:'';
+        position: absolute;
+        display:block;
+        right: 18%;
+
+        width: 30%;
+        height: 10px;
+
+        border-bottom: 2px solid  $hslWhite;
+
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  nav.navContainer {
+    display: inherit;
+    position: relative;
+    width: 100%;
+
+    & .hamburgerButton {
+      display: inline;
+      position: absolute;
+      right: 0;
+    }
+
+    & ul{
+      display: unset;
+      text-transform: uppercase;
+
+      & li {
+        padding: 0;
+
+        &:hover:after{
+          content: unset;
+        }
+      }
+    }
+  }
+}

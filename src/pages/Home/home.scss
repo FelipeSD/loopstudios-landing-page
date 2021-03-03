@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.mainHome{
+  display: flex;
+
+  & .homeContainer{
+    min-height: 100vh;
+    width: 100%;
+
+    padding: $desktop_mainSpaceY $desktop_mainSpaceX;
+
+    background-image:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("../../assets/images/desktop/image-hero.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .mainHome {
+    display: flex;
+
+    & .homeContainer {
+      padding: $mobile_mainSpaceY $mobile_mainSpaceX;
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../../assets/images/mobile/image-hero.jpg");
+    }
+
+    & .homeContainer.open-menu {
+      background: $hslBlack;
+    }
+  }
+}
+
