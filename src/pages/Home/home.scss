@@ -7,6 +7,13 @@
 
   min-height: 100vh;
 
+  & h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: unset;
+    margin-bottom: 2rem;
+  }
+
   & .homeContainer{
     display: flex;
     align-items: center;
@@ -34,6 +41,47 @@
       font-size: 4rem;
       text-transform: uppercase;
     }
+  }
+
+  & .aboutUsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-end;
+
+    min-height: 100vh;
+    width: 100%;
+
+    margin: 5rem 0;
+    padding: $desktop_mainSpaceY $desktop_mainSpaceX;
+
+    & > div:first-child{
+      height: 500px;
+      width: 100%;
+
+      & .imageInteractive {
+        height: 100%;
+
+        background-repeat: no-repeat;
+        background-image: url("../../assets/images/desktop/image-interactive.jpg");
+      }
+    }
+
+    & > div:last-child {
+      padding: 6rem;
+      background-color: $hslWhite;
+
+      width: 600px;
+      margin-top: -30%;
+      margin-right: -5%;
+
+      & p{
+        font-size: 1rem;
+        font-family: 'Alata-Regular', sans-serif;
+        color: $hslDarkGray;
+      }
+    }
+
   }
 }
 
