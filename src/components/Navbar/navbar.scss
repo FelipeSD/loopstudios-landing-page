@@ -3,6 +3,9 @@
 nav.navContainer{
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding: $desktop_mainSpaceY $desktop_mainSpaceX;
 
   color: $hslWhite;
 
@@ -43,26 +46,62 @@ nav.navContainer{
 
 @media (max-width: $mobileBreakpoint) {
   nav.navContainer {
-    display: inherit;
-    position: relative;
+    display: block;
+    position: absolute;
     width: 100%;
+
+    padding: $mobile_mainSpaceY $mobile_mainSpaceX;
 
     & .hamburgerButton {
       display: inline;
       position: absolute;
-      right: 0;
+      right: $mobile_mainSpaceX;
     }
 
-    & ul{
-      display: unset;
+    & ul {
+      display: none;
       text-transform: uppercase;
 
       & li {
         padding: 0;
 
-        &:hover:after{
+        & a {
+          display: block;
+          width: 100%;
+        }
+
+        &:hover:after {
           content: unset;
         }
+      }
+    }
+  }
+
+  nav.navContainer.open-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding: $mobile_mainSpaceY $mobile_mainSpaceX;
+
+    min-height: 100vh;
+    width: 100%;
+
+    background: $hslBlack;
+
+    & .hamburgerButton {
+      right: $mobile_mainSpaceX;
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 8rem;
+
+      & li{
+        margin-bottom: 1rem;
       }
     }
   }
