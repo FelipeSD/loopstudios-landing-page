@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.btn {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+  transition: all .25s;
+
+  &.btnDefault{
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: $hslBlack;
+
+    border: 1px solid $hslBlack;
+    padding: .5rem 2rem;
+
+    &:hover{
+      color: $hslWhite;
+      background-color: $hslBlack;;
+    }
+  }
+}

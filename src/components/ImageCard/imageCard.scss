@@ -1,0 +1,86 @@
+@import "../../styles/variables";
+
+.ImageCardContainer{
+  height: 550px;
+  width: 100%;
+
+  padding-bottom: 1rem;
+  &:not(:last-child){
+    padding-right: 1rem;
+  }
+
+  & > div {
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  & .imageDeepEarth{
+    background-image: url("../../assets/images/desktop/image-deep-earth.jpg");
+  }
+  & .imageNightArcade{
+    background-image: url("../../assets/images/desktop/image-night-arcade.jpg");
+  }
+  & .imageSoccerTeam{
+    background-image: url("../../assets/images/desktop/image-soccer-team.jpg");
+  }
+  & .imageGrid{
+    background-image: url("../../assets/images/desktop/image-grid.jpg");
+  }
+  & .imageFromAbove{
+    background-image: url("../../assets/images/desktop/image-from-above.jpg");
+  }
+  & .imagePocketBorealis{
+    background-image: url("../../assets/images/desktop/image-pocket-borealis.jpg");
+  }
+  & .imageCuriosity{
+    background-image: url("../../assets/images/desktop/image-curiosity.jpg");
+  }
+  & .imageFisheye{
+    background-image: url("../../assets/images/desktop/image-fisheye.jpg");
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .ImageCardContainer {
+    height: 150px;
+    padding: 0!important;
+
+    & > div {
+      background-size: contain;
+    }
+
+    & .imageDeepEarth {
+      background-image: url("../../assets/images/mobile/image-deep-earth.jpg");
+    }
+
+    & .imageNightArcade {
+      background-image: url("../../assets/images/mobile/image-night-arcade.jpg");
+    }
+
+    & .imageSoccerTeam {
+      background-image: url("../../assets/images/mobile/image-soccer-team.jpg");
+    }
+
+    & .imageGrid {
+      background-image: url("../../assets/images/mobile/image-grid.jpg");
+    }
+
+    & .imageFromAbove {
+      background-image: url("../../assets/images/mobile/image-from-above.jpg");
+    }
+
+    & .imagePocketBorealis {
+      background-image: url("../../assets/images/mobile/image-pocket-borealis.jpg");
+    }
+
+    & .imageCuriosity {
+      background-image: url("../../assets/images/mobile/image-curiosity.jpg");
+    }
+
+    & .imageFisheye {
+      background-image: url("../../assets/images/mobile/image-fisheye.jpg");
+    }
+  }
+}
