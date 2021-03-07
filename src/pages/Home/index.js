@@ -1,14 +1,8 @@
 import React from 'react';
 import './home.scss';
 import Navbar from "../../components/Navbar";
-
-const ImageCard = () => {
-    return (
-        <div>
-
-        </div>
-    )
-}
+import Button from "../../components/Button";
+import ImageCard from "../../components/ImageCard";
 
 const Home = () => {
     return (
@@ -40,16 +34,46 @@ const Home = () => {
 
             <section className="ourCreationsContainer">
                 <h3>Our creations</h3>
-                <button type="button">See all</button>
-                <div>
-                    <ImageCard text={"Deep earth"} />
-                    <ImageCard text={"Night arcade"} />
-                    <ImageCard text={"Soccer team VR"} />
-                    <ImageCard text={"The grid"} />
-                    <ImageCard text={"From up above VR"} />
-                    <ImageCard text={"Pocket borealis"} />
-                    <ImageCard text={"The curiosity"} />
-                    <ImageCard text={"Make it fisheye"} />
+                <Button
+                    text={"See all"}
+                    type={"button"}
+                />
+
+                <div className="gallery">
+
+                    <ImageCard
+                        className={"imageDeepEarth"}
+                        text={"Deep earth"} />
+
+                    <ImageCard
+                        className={"imageNightArcade"}
+                        text={"Night arcade"} />
+
+                    <ImageCard
+                        className={"imageSoccerTeam"}
+                        text={"Soccer team VR"} />
+
+                    <ImageCard
+                        className={"imageGrid"}
+                        text={"The grid"} />
+                </div>
+                <div className="gallery">
+                    <ImageCard
+                        className={"imageFromAbove"}
+                        text={"From up above VR"} />
+
+                    <ImageCard
+                        className={"imagePocketBorealis"}
+                        text={"Pocket borealis"} />
+
+                    <ImageCard
+                        className={"imageCuriosity"}
+                        text={"The curiosity"} />
+
+                    <ImageCard
+                        className={"imageFisheye"}
+                        text={"Make it fisheye"} />
+
                 </div>
             </section>
 

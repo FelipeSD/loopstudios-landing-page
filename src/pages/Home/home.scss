@@ -52,8 +52,8 @@
     min-height: 100vh;
     width: 100%;
 
-    margin: 6rem 0 2rem 0;
-    padding: $desktop_mainSpaceY $desktop_mainSpaceX;
+    margin: 6rem 0 0 0;
+    padding: $desktop_mainSpaceY $desktop_mainSpaceX 0;
 
     & > div:first-child{
       height: 500px;
@@ -71,8 +71,8 @@
       padding: 6rem;
       background-color: $hslWhite;
 
-      width: 600px;
-      margin-top: -26%;
+      width: 640px;
+      margin-top: -25%;
 
       & p{
         font-size: 1rem;
@@ -81,6 +81,24 @@
       }
     }
 
+  }
+
+  & .ourCreationsContainer{
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    padding: $desktop_mainSpaceY $desktop_mainSpaceX;
+
+    & .gallery{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      width: 100%;
+    }
+  }
+
+  & footer{
+    padding: 0 $desktop_mainSpaceX;
   }
 }
 
@@ -106,8 +124,11 @@
     }
 
     & .aboutUsContainer {
+      min-height: unset;
+
       padding: $mobile_mainSpaceY $mobile_mainSpaceX;
       margin: 0;
+
       text-align: center;
 
       & > div:first-child {
@@ -128,6 +149,21 @@
           font-size: 1.2rem;
         }
       }
+    }
+
+    & .ourCreationsContainer {
+      justify-content: center;
+
+      padding: $mobile_mainSpaceY $mobile_mainSpaceX;
+
+      & > button{
+        order: 1;
+      }
+
+      & .gallery{
+        display: block;
+      }
+
     }
   }
 }
