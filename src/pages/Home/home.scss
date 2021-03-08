@@ -89,6 +89,11 @@
     flex-flow: wrap;
     padding: $desktop_mainSpaceY $desktop_mainSpaceX;
 
+    & > button {
+      margin-bottom: 2rem;
+      margin-left: auto;
+    }
+
     & .gallery{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -114,8 +119,7 @@
       min-height: 100vh;
       padding: $mobile_mainSpaceY $mobile_mainSpaceX;
 
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../../assets/images/mobile/image-hero.jpg");
+      background-image: url("../../assets/images/mobile/image-hero.jpg");
 
       & > p {
         width: unset;
@@ -158,12 +162,12 @@
 
       & > button{
         order: 1;
+        margin: 0;
       }
 
       & .gallery{
         display: block;
       }
-
     }
   }
 }

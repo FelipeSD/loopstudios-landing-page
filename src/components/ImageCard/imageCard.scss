@@ -1,6 +1,8 @@
 @import "../../styles/variables";
 
 .ImageCardContainer{
+  position: relative;
+
   height: 550px;
   width: 100%;
 
@@ -14,31 +16,63 @@
 
     background-repeat: no-repeat;
     background-size: cover;
+
+    &:hover{
+      cursor: pointer;
+      opacity: .3;
+    }
+  }
+
+  & p {
+    margin-top: auto;
+    padding: 3rem;
+
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $hslWhite;
+    position: absolute;
+    bottom: 0;
   }
 
   & .imageDeepEarth{
-    background-image: url("../../assets/images/desktop/image-deep-earth.jpg");
+    background-image:
+            $bgGradient,
+            url("../../assets/images/desktop/image-deep-earth.jpg");
   }
   & .imageNightArcade{
-    background-image: url("../../assets/images/desktop/image-night-arcade.jpg");
+    background-image:
+            $bgGradient,
+            url("../../assets/images/desktop/image-night-arcade.jpg");
   }
   & .imageSoccerTeam{
-    background-image: url("../../assets/images/desktop/image-soccer-team.jpg");
+    background-image:
+            $bgGradient,
+            url("../../assets/images/desktop/image-soccer-team.jpg");
   }
   & .imageGrid{
-    background-image: url("../../assets/images/desktop/image-grid.jpg");
+    background-image:
+            $bgGradient,
+            url("../../assets/images/desktop/image-grid.jpg");
   }
   & .imageFromAbove{
-    background-image: url("../../assets/images/desktop/image-from-above.jpg");
+    background-image:
+            $bgGradient,
+            url("../../assets/images/desktop/image-from-above.jpg");
   }
   & .imagePocketBorealis{
-    background-image: url("../../assets/images/desktop/image-pocket-borealis.jpg");
+    background-image:
+            $bgGradient,
+            url("../../assets/images/desktop/image-pocket-borealis.jpg");
   }
   & .imageCuriosity{
-    background-image: url("../../assets/images/desktop/image-curiosity.jpg");
+    background-image:
+            $bgGradient,
+            url("../../assets/images/desktop/image-curiosity.jpg");
   }
   & .imageFisheye{
-    background-image: url("../../assets/images/desktop/image-fisheye.jpg");
+    background-image:
+            $bgGradient,
+            url("../../assets/images/desktop/image-fisheye.jpg");
   }
 }
 
@@ -49,6 +83,10 @@
 
     & > div {
       background-size: contain;
+    }
+
+    & p {
+      padding: 0 10rem 4rem 2rem;
     }
 
     & .imageDeepEarth {

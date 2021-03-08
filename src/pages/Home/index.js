@@ -9,11 +9,11 @@ const Home = () => {
         <main className="mainHome">
             <Navbar />
 
-            <section className="homeContainer">
+            <div className="homeContainer">
                 <p>
                     Immersive experiences that deliver
                 </p>
-            </section>
+            </div>
 
             <section className="aboutUsContainer">
                 <div>
@@ -34,6 +34,7 @@ const Home = () => {
 
             <section className="ourCreationsContainer">
                 <h3>Our creations</h3>
+
                 <Button
                     text={"See all"}
                     type={"button"}
@@ -73,7 +74,6 @@ const Home = () => {
                     <ImageCard
                         className={"imageFisheye"}
                         text={"Make it fisheye"} />
-
                 </div>
             </section>
 

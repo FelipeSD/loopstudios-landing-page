@@ -1,3 +1,16 @@
+# 📓 My Learning
+
+I'd like to share 2 things I've learned making this project:
+1. Set max width on main container instead using padding like I did.
+    This will assure the same view for greater screens.
+   
+
+2. When there is hover(active) effects on images that have texts, as we see 
+   on each cards in 'Our Creations' section, it'll be easier to set background image 
+   in CSS over ::before or ::after pseudo-element, because
+   the effects will not be applied to the texts inside as well.
+   
+
 # Frontend Mentor - Loopstudios landing page
 
 ![Design preview for the Loopstudios landing page coding challenge](./public/design/desktop-preview.jpg)
