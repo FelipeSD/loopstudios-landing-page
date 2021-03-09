@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+footer {
+  height: 200px;
+
+  & .footerContainer{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background: $hslBlack;
+    color: $hslWhite;
+    padding: 3rem $desktop_mainSpaceX;
+
+    & ul {
+      display: flex;
+      list-style-type: none;
+    }
+  }
+}

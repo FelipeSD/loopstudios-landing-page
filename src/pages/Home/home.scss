@@ -7,6 +7,9 @@
 
   min-height: 100vh;
 
+  background: $hslWhite;
+  z-index: 1;
+
   & h3 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -100,10 +103,6 @@
 
       width: 100%;
     }
-  }
-
-  & footer{
-    padding: 0 $desktop_mainSpaceX;
   }
 }
 

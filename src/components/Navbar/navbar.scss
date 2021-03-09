@@ -3,12 +3,14 @@
 nav.navContainer{
   display: flex;
   justify-content: space-between;
+
   position: absolute;
+  z-index: 9;
+
   width: 100%;
   padding: $desktop_mainSpaceY $desktop_mainSpaceX;
 
   color: $hslWhite;
-
   font-size: 1.3rem;
 
   & .hamburgerButton{
