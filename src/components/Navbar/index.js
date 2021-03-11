@@ -6,7 +6,7 @@ import close from '../../assets/images/icon-close.svg';
 
 export const LinkList = () => {
     return (
-        <ul>
+        <ul className="navList">
             <li>
                 <a href="#loopstudios">About</a>
             </li>

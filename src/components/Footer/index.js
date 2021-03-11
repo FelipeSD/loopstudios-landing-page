@@ -19,9 +19,15 @@ const Footer = () => {
                 <ul className="linkList">
                     <li>
                         <img src={facebook} alt="facebook" />
-                        <img src={twitter} alt="facebook" />
-                        <img src={pinterest} alt="facebook" />
-                        <img src={instagram} alt="facebook" />
+                    </li>
+                    <li>
+                        <img src={twitter} alt="twitter" />
+                    </li>
+                    <li>
+                        <img src={pinterest} alt="pinterest" />
+                    </li>
+                    <li>
+                        <img src={instagram} alt="instagram" />
                     </li>
                 </ul>
                 <span>© 2021 Loopstudios. All rights reserved.</span>

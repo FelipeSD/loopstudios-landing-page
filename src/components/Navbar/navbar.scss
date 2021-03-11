@@ -20,28 +20,29 @@ nav.navContainer{
     border: unset;
   }
 
-  & ul{
-    display: flex;
-    margin: auto 0;
-    list-style-type: none;
+}
 
-    & li {
-      position: relative;
-      padding: 0 1rem;
+ul.navList{
+  display: flex;
+  margin: auto 0;
+  list-style-type: none;
 
-      &:hover:after{
-        content:'';
-        position: absolute;
-        display:block;
-        right: 18%;
+  & li {
+    position: relative;
+    padding: 0 1rem;
 
-        width: 30%;
-        height: 10px;
+    &:hover:after{
+      content:'';
+      position: absolute;
+      display:block;
+      right: 18%;
 
-        border-bottom: 2px solid  $hslWhite;
+      width: 30%;
+      height: 10px;
 
-        transform: translateX(-50%);
-      }
+      border-bottom: 2px solid  $hslWhite;
+
+      transform: translateX(-50%);
     }
   }
 }
@@ -60,7 +61,7 @@ nav.navContainer{
       right: $mobile_mainSpaceX;
     }
 
-    & ul {
+    & ul.navList {
       display: none;
       text-transform: uppercase;
 
@@ -94,7 +95,7 @@ nav.navContainer{
       right: $mobile_mainSpaceX;
     }
 
-    & ul {
+    & ul.navList {
       display: flex;
       flex-direction: column;
       justify-content: center;

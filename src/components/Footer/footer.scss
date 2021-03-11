@@ -4,6 +4,10 @@ footer {
   height: 200px;
 
   & .footerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     position: fixed;
     right: 0;
     left: 0;
@@ -14,8 +18,47 @@ footer {
     padding: 3rem $desktop_mainSpaceX;
 
     & ul {
+      margin-top: 1.5rem;
+
       display: flex;
       list-style-type: none;
+
+      &.linkList {
+        display: flex;
+      }
+    }
+
+    & .attribution{
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: $mobileBreakpoint) {
+  footer {
+    height: 370px;
+
+    & .footerContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      padding: 3rem $mobile_mainSpaceX;
+
+      & ul.navList{
+        text-align: center;
+        flex-direction: column;
+
+        & li:hover:after {
+          content: none;
+        }
+      }
+
+      & ul.linkList{
+        justify-content: center;
+      }
     }
   }
 }
